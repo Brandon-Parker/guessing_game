@@ -11,3 +11,11 @@ The files that were used in this game were saved as the following:
   codereview.js - All of the JavaScript is contained here
 
 Within the console, in the browser, contains information on the user's responses and whether or not it was the correct answer.
+
+
+Joke Time:
+Because I am a music guy, I figured this would be a good one ;)
+
+A woman is put on trial for beating her husband to death with his guitar collection.
+Judges says: "First offender?"
+She says: "No, first a Gibson! Then a Fender!"
