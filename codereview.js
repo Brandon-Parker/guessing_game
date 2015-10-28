@@ -51,12 +51,23 @@ var yes =0;
       console.log('The User answered incorrect with: ' + question4);
     }
 
+var question5 = prompt("Am I a big video gamer?").toLowerCase();
+if (question5 === 'yes' || question5 ==='ye' || question5 ==='y' || question5 ==='yeah' || question5 ==='yea') {
+    alert('You got it!');
+    console.log('The user answered correct with: ' + question5);
+    yes +=1;
+  } else {
+    alert('Hmmm...that is not the correct answer, maybe next time!');
+    console.log('The User answered incorrect with: ' + question5);
+  }
 
-  alert('You got ' + yes + ' out of 4  questions correct! Good job!');
+
+  alert('You got ' + yes + ' out of 5 questions correct! Good job!');
   alert('The answer to question 1 was yes! I have lived in Mill Creek, Woodinville and Bellevue!');
   alert('The answer to question 2 was no! Blue is my favorite color!');
   alert('Question 3 was a resounding yes! Guitar is awesome! I started playing guitar when I was 12! Rock and roll!');
   alert('The answer to question 4 was 22!');
+  alert('The answer to question 5 was a definite yes! Some of my favorite games include Halo, Mass Effect and Star Wars!');
 
 
 
