@@ -1,6 +1,5 @@
 var no =0;
 var yes =0;
-
 var ans1 = document.getElementById('answer1');
 var ans2 = document.getElementById('answer2');
 var ans3 = document.getElementById('answer3');
@@ -20,7 +19,6 @@ if (question1 === 'yes' || question1 === 'y' || question1 === 'ye' || question1 
   console.log('The user answered incorrect with: ' + question1);
   }
 }
-
 q1();
 
  var question2 = prompt('Is my favorite color yellow?').toLowerCase();
@@ -35,7 +33,6 @@ if (question2 === 'no' || question2 === 'n' || question2 === 'NO') {
   console.log('The user answered incorrect with: ' + question2);
   }
 }
-
 q2();
 
  var question3 = prompt('Is my favorite instrument the guitar?').toLowerCase();
@@ -50,7 +47,6 @@ if (question3 === 'yes' || question3 ==='ye' || question3 ==='y' || question3 ==
   console.log('The user answered incorrect with: ' + question3);
   }
 }
-
 q3();
 
 var question4 = parseInt(prompt('How old am I?'));
@@ -72,7 +68,6 @@ if (question4 === 22) {
   console.log('The User answered incorrect with: ' + question4);
   }
 }
-
 q4();
 
 var question5 = prompt("Am I a big video gamer?").toLowerCase();
@@ -87,7 +82,6 @@ if (question5 === 'yes' || question5 ==='ye' || question5 ==='y' || question5 ==
   console.log('The User answered incorrect with: ' + question5);
   }
 }
-
 q5();
 
 var question6 = parseInt(prompt("How many guitars do I have?"));
@@ -104,7 +98,6 @@ if (question6 ===5) {
   yes +=1;
   }
 }
-
 q6();
 
   alert('You got ' + yes + ' out of 6 questions correct! Good job!');
