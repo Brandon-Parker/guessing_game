@@ -10,6 +10,7 @@ var ans6 = document.getElementById('answer6');
 
  var question1 = prompt('Have I lived in Washington my whole life?').toLowerCase();
 
+function q1() {
 if (question1 === 'yes' || question1 === 'y' || question1 === 'ye' || question1 === 'Yeah' || question1 ==='yea') {
   ans1.innerHTML = 'You got it! I have lived in Mill Creek, Woodinville, and Bellevue!';
   console.log('The user answered correct with: ' + question1);
@@ -17,10 +18,14 @@ if (question1 === 'yes' || question1 === 'y' || question1 === 'ye' || question1 
 } else {
   ans1.innerHTML = 'Uh oh! That is wrong';
   console.log('The user answered incorrect with: ' + question1);
+  }
 }
+
+q1();
 
  var question2 = prompt('Is my favorite color yellow?').toLowerCase();
 
+function q2() {
 if (question2 === 'no' || question2 === 'n' || question2 === 'NO') {
   ans2.innerHTML = 'You got it! Blue is my favorite color.';
   console.log('The user answered correct with: ' + question2);
@@ -28,10 +33,14 @@ if (question2 === 'no' || question2 === 'n' || question2 === 'NO') {
 } else {
   ans2.innerHTML = 'Uh oh! That is wrong';
   console.log('The user answered incorrect with: ' + question2);
+  }
 }
+
+q2();
 
  var question3 = prompt('Is my favorite instrument the guitar?').toLowerCase();
 
+function q3() {
 if (question3 === 'yes' || question3 ==='ye' || question3 ==='y' || question3 ==='yeah' || question3 ==='yea') {
   ans3.innerHTML = 'You got it! The guitar is my favorite instrument.';
   console.log('The user answered correct with: ' + question3);
@@ -39,9 +48,14 @@ if (question3 === 'yes' || question3 ==='ye' || question3 ==='y' || question3 ==
 } else {
   ans3.innerHTML + 'Uh oh! That is wrong';
   console.log('The user answered incorrect with: ' + question3);
+  }
 }
 
+q3();
+
 var question4 = parseInt(prompt('How old am I?'));
+
+function q4() {
   console.log("This is the user's answer");
   console.log(typeof(question4));
   console.log("This what we are validating");
@@ -56,9 +70,14 @@ if (question4 === 22) {
 } else {
   ans4.innerHTML = 'You were close, better luck next time!';
   console.log('The User answered incorrect with: ' + question4);
+  }
 }
 
+q4();
+
 var question5 = prompt("Am I a big video gamer?").toLowerCase();
+
+function q5() {
 if (question5 === 'yes' || question5 ==='ye' || question5 ==='y' || question5 ==='yeah' || question5 ==='yea') {
   ans5.innerHTML = 'You got it! Some of my favorites are HALO, Mass Effect, and Star Wars.';
   console.log('The user answered correct with: ' + question5);
@@ -66,10 +85,14 @@ if (question5 === 'yes' || question5 ==='ye' || question5 ==='y' || question5 ==
 } else {
   ans5.innerHTML + 'Hmmm...that is not the correct answer, maybe next time!';
   console.log('The User answered incorrect with: ' + question5);
+  }
 }
+
+q5();
 
 var question6 = parseInt(prompt("How many guitars do I have?"));
 
+function q6() {
 while (question6 !==5) {
   ans6.innerHTML = "That's not quite the right guess. Give it another guess! It\'s between 1 and 10.";
   question6 = parseInt(prompt('What is your guess?'));
@@ -79,7 +102,10 @@ if (question6 ===5) {
   ans6.innerHTML = 'Way to go! I do have 5.';
   console.log('The user answered correct with: ' + question6);
   yes +=1;
+  }
 }
+
+q6();
 
   alert('You got ' + yes + ' out of 6 questions correct! Good job!');
 
