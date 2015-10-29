@@ -1,86 +1,106 @@
 var no =0;
 var yes =0;
+var ans1 = document.getElementById('answer1');
+var ans2 = document.getElementById('answer2');
+var ans3 = document.getElementById('answer3');
+var ans4 = document.getElementById('answer4');
+var ans5 = document.getElementById('answer5');
+var ans6 = document.getElementById('answer6');
 
  var question1 = prompt('Have I lived in Washington my whole life?').toLowerCase();
 
+function q1() {
 if (question1 === 'yes' || question1 === 'y' || question1 === 'ye' || question1 === 'Yeah' || question1 ==='yea') {
-  alert('You got it!');
+  ans1.innerHTML = 'You got it! I have lived in Mill Creek, Woodinville, and Bellevue!';
   console.log('The user answered correct with: ' + question1);
   yes +=1;
 } else {
-  alert('Uh oh! That is wrong');
+  ans1.innerHTML = 'Uh oh! That is wrong';
   console.log('The user answered incorrect with: ' + question1);
+  }
 }
+q1();
 
  var question2 = prompt('Is my favorite color yellow?').toLowerCase();
 
+function q2() {
 if (question2 === 'no' || question2 === 'n' || question2 === 'NO') {
-  alert('You got it!');
+  ans2.innerHTML = 'You got it! Blue is my favorite color.';
   console.log('The user answered correct with: ' + question2);
   yes +=1;
 } else {
-  alert('Uh oh! That is wrong')
+  ans2.innerHTML = 'Uh oh! That is wrong';
   console.log('The user answered incorrect with: ' + question2);
+  }
 }
+q2();
 
  var question3 = prompt('Is my favorite instrument the guitar?').toLowerCase();
 
+function q3() {
 if (question3 === 'yes' || question3 ==='ye' || question3 ==='y' || question3 ==='yeah' || question3 ==='yea') {
-  alert('You got it!');
+  ans3.innerHTML = 'You got it! The guitar is my favorite instrument.';
   console.log('The user answered correct with: ' + question3);
   yes +=1;
 } else {
-  alert('Uh oh! That is wrong')
+  ans3.innerHTML + 'Uh oh! That is wrong';
   console.log('The user answered incorrect with: ' + question3);
+  }
 }
+q3();
 
 var question4 = parseInt(prompt('How old am I?'));
+
+function q4() {
   console.log("This is the user's answer");
   console.log(typeof(question4));
   console.log("This what we are validating");
   console.log(typeof(22))
 if (question4 === 22) {
-  alert('Great guess!');
+  ans4.innerHTML = 'Great guess! I am 22.';
   console.log('The User answered correct with: ' + question4);
   yes +=1;
 } else if(question4 < 22) {
-  alert('You were close, but not quite there!');
+  ans4.innerHTML = 'You were close, but not quite there!';
   console.log('The User answered incorrect with: ' + question4);
 } else {
-  alert('You were close, better luck next time!');
+  ans4.innerHTML = 'You were close, better luck next time!';
   console.log('The User answered incorrect with: ' + question4);
+  }
 }
+q4();
 
 var question5 = prompt("Am I a big video gamer?").toLowerCase();
+
+function q5() {
 if (question5 === 'yes' || question5 ==='ye' || question5 ==='y' || question5 ==='yeah' || question5 ==='yea') {
-  alert('You got it!');
+  ans5.innerHTML = 'You got it! Some of my favorites are HALO, Mass Effect, and Star Wars.';
   console.log('The user answered correct with: ' + question5);
   yes +=1;
 } else {
-  alert('Hmmm...that is not the correct answer, maybe next time!');
+  ans5.innerHTML + 'Hmmm...that is not the correct answer, maybe next time!';
   console.log('The User answered incorrect with: ' + question5);
+  }
 }
+q5();
 
 var question6 = parseInt(prompt("How many guitars do I have?"));
 
+function q6() {
 while (question6 !==5) {
-  alert("That's not quite the right guess. Give it another guess!");
+  ans6.innerHTML = "That's not quite the right guess. Give it another guess! It\'s between 1 and 10.";
   question6 = parseInt(prompt('What is your guess?'));
   console.log(question6)
 }
 if (question6 ===5) {
-  alert('Way to go!');
+  ans6.innerHTML = 'Way to go! I do have 5.';
   console.log('The user answered correct with: ' + question6);
   yes +=1;
+  }
 }
+q6();
 
   alert('You got ' + yes + ' out of 6 questions correct! Good job!');
-  alert('The answer to question 1 was yes! I have lived in Mill Creek, Woodinville and Bellevue!');
-  alert('The answer to question 2 was no! Blue is my favorite color!');
-  alert('Question 3 was a resounding yes! Guitar is awesome! I started playing guitar when I was 12! Rock and roll!');
-  alert('The answer to question 4 was 22!');
-  alert('The answer to question 5 was a definite yes! Some of my favorite games include Halo, Mass Effect and Star Wars!');
-  alert('Question 6 was the number 5! I have 5 guitars at home!')
 
 
 

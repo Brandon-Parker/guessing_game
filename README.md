@@ -6,6 +6,9 @@ My name is Brandon Parker and this is a Guessing Game that I have built so you c
 Project Name: Guessing Game
 The game consists of 6 questions of either Yes/No answers or a number response.
 
+Driver: George Ascherl
+Navigator: Brandon Parker
+
 The files that were used in this game were saved as the following:
   index.html - All of the HTML is contained here (NO WAY!)
   codereview.js - All of the JavaScript is contained here
