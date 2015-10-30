@@ -11,7 +11,7 @@ var ans6 = document.getElementById('answer6');
 
 function q1() {
 if (question1 === 'yes' || question1 === 'y' || question1 === 'ye' || question1 === 'Yeah' || question1 ==='yea') {
-  ans1.innerHTML = 'You got it! I have lived in Mill Creek, Woodinville, and Bellevue!';
+  ans1.innerHTML = 'You got it! I have lived in Mill Creek, Woodinville, and Bellevue!' + '</br><img src = "images/home.jpg"/>';
   console.log('The user answered correct with: ' + question1);
   yes +=1;
 } else {
@@ -95,7 +95,7 @@ if (question6 ===5) {
   }
 }
 
-window.setTimeout(q1, 1000);
+q1();
 window.setTimeout(q2, 1000);
 window.setTimeout(q3, 1000);
 window.setTimeout(q4, 1000);
