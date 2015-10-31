@@ -11,7 +11,7 @@ var ans6 = document.getElementById('answer6');
 
 function q1() {
 if (question1 === 'yes' || question1 === 'y' || question1 === 'ye' || question1 === 'Yeah' || question1 ==='yea') {
-  ans1.innerHTML = 'You got it! I have lived in Mill Creek, Woodinville, and Bellevue!';
+  ans1.innerHTML = 'You got it! I have lived in Mill Creek, Woodinville, and Bellevue! </br><img src= "images/home.jpg">';
   ans1.className = 'correct';
   console.log('The user answered correct with: ' + question1);
   yes +=1;
@@ -26,7 +26,7 @@ if (question1 === 'yes' || question1 === 'y' || question1 === 'ye' || question1 
 
 function q2() {
 if (question2 === 'no' || question2 === 'n' || question2 === 'NO') {
-  ans2.innerHTML = 'You got it! Blue is my favorite color.';
+  ans2.innerHTML = 'You got it! Blue is my favorite color. </br><img src="images/smurf.jpg">';
   ans2.className = 'correct';
   console.log('The user answered correct with: ' + question2);
   yes +=1;
@@ -41,7 +41,7 @@ if (question2 === 'no' || question2 === 'n' || question2 === 'NO') {
 
 function q3() {
 if (question3 === 'yes' || question3 ==='ye' || question3 ==='y' || question3 ==='yeah' || question3 ==='yea') {
-  ans3.innerHTML = 'You got it! The guitar is my favorite instrument.';
+  ans3.innerHTML = 'You got it! The guitar is my favorite instrument. </br><img src="images/guitar.jpg">';
   ans3.className = 'correct';
   console.log('The user answered correct with: ' + question3);
   yes +=1;
@@ -60,7 +60,7 @@ function q4() {
   console.log("This what we are validating");
   console.log(typeof(22))
 if (question4 === 22) {
-  ans4.innerHTML = 'Great guess! I am 22.';
+  ans4.innerHTML = 'Great guess! I am 22. </br><img src="images/claptrap.gif">';
   ans4.className = 'correct';
   console.log('The User answered correct with: ' + question4);
   yes +=1;
@@ -80,7 +80,7 @@ var question5 = prompt("Am I a big video gamer?").toLowerCase();
 
 function q5() {
 if (question5 === 'yes' || question5 ==='ye' || question5 ==='y' || question5 ==='yeah' || question5 ==='yea') {
-  ans5.innerHTML = 'You got it! Some of my favorites are HALO, Mass Effect, and Star Wars.';
+  ans5.innerHTML = 'You got it! Some of my favorites are HALO, Mass Effect, and Star Wars. </br><img src="images/vader.jpg">';
   ans5.className = 'correct';
   console.log('The user answered correct with: ' + question5);
   yes +=1;
@@ -103,7 +103,7 @@ function q6() {
     console.log(question6)
   }
   if (question6 ===5) {
-    ans6.innerHTML = 'Way to go! I do have 5.';
+    ans6.innerHTML = 'Way to go! I do have 5. </br><img src="images/torgue.gif">';
     ans6.className = 'correct';
     console.log('The user answered correct with: ' + question6);
     yes +=1;
