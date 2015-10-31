@@ -9,6 +9,11 @@ The game consists of 6 questions of either Yes/No answers or a number response.
 Driver: George Ascherl
 Navigator: Brandon Parker
 
+10/30
+Driver: Thom Nienow
+Navigator: Brandon Parker
+Backseat driver: Melissa Giaime
+
 The files that were used in this game were saved as the following:
   index.html - All of the HTML is contained here (NO WAY!)
   codereview.js - All of the JavaScript is contained here
